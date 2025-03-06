@@ -1,0 +1,46 @@
+@media (min-width: 1024px) {
+   
+    .card {
+        display: grid;
+        grid-template-areas: 
+        "logo hero"
+        "group-text hero" ;
+        grid-template-columns: 1fr 0.8fr;
+        grid-template-rows: 0.5fr 1.5fr ;
+        height: 100%;
+        
+    }
+    .logo {
+        grid-area: logo;
+        align-self: self-start;
+        padding: 10% 20%;
+        width: 158px;
+    }
+    .hero{
+        grid-area: hero;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+    }
+    
+    .group-text {
+        grid-area: group-text;
+        align-self: self-start;
+        padding: 10% 20%;       
+    }
+    .heading{
+        text-align: left;
+        font-size: 4rem;
+    line-height: 4.4375rem;
+    letter-spacing: 1.0825rem;
+    }
+    
+.thin {
+    line-height:4rem;
+}
+    .text{
+        text-align: left;
+        font-size: 1rem;
+    line-height: 1.75rem;
+    }
+}
